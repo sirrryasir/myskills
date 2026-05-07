@@ -1,15 +1,15 @@
 # My Skills
 
-This repository is a collection of 400+ specialized skills for AI agents. It includes the complete sets from Caveman, Superpowers, and Humanizer, along with hundreds of professional role definitions for various industries.
+This repository is a comprehensive library of over 400 specialized AI agent skills. While it features advanced toolsets like Caveman, Superpowers, and Humanizer, the bulk of the collection consists of hundreds of professional agency roles designed for high-level technical and business tasks.
 
 ## Repository structure
 
-All xirfado are located in the `skills` directory, grouped by their origin or category.
+All skills are located in the `skills` directory, organized by category and origin.
 
-- `skills/caveman/`: Focuses on extreme token efficiency and brief, technical responses.
-- `skills/superpowers/`: Covers a structured software development methodology, including TDD and brainstorming.
-- `skills/humanizer/`: Contains the logic for removing AI patterns and artifacts from text.
-- `skills/agency-*/`: Hundreds of specific roles ranging from backend architecture to SEO strategy.
+- `skills/caveman/`: A set of 7 skills focused on extreme token efficiency.
+- `skills/superpowers/`: A collection of 14 skills implementing a structured software development methodology.
+- `skills/humanizer/`: Specialized logic for removing AI writing artifacts.
+- `skills/agency-*/`: Over 400 distinct professional roles, including backend architects, SEO specialists, security auditors, and more.
 
 ## Setup
 
@@ -23,8 +23,8 @@ To use a skill locally, move its folder to your agent's configuration path.
 # Create the target directory
 New-Item -ItemType Directory -Path "$HOME\.agents\skills" -Force
 
-# Copy a specific skill set
-Copy-Item -Path ".\skills\caveman" -Destination "$HOME\.agents\skills\" -Recurse
+# Copy a specific skill set (e.g., the entire superpowers collection)
+Copy-Item -Path ".\skills\superpowers" -Destination "$HOME\.agents\skills\" -Recurse
 ```
 
 ### macOS and Linux
@@ -39,24 +39,30 @@ cp -r ./skills/humanizer ~/.agents/skills/
 
 ## Using skills in web interfaces
 
-If you are using Claude.ai or ChatGPT, you can still apply these skills to your conversations.
+For browser-based tools like Claude.ai or ChatGPT, you can apply these skills manually.
 
-1.  Open the `SKILL.md` file for the specific skill you want to use.
-2.  Copy the entire content of the file.
-3.  Paste it into the **Project Instructions** (on Claude) or **Custom Instructions** (on ChatGPT).
+1.  Navigate to the directory of the skill you want to use.
+2.  Open the `SKILL.md` file.
+3.  Copy its content and paste it into your **Project Instructions** or **Custom Instructions**.
 
-You can also upload the `SKILL.md` file directly to a chat and instruct the AI to follow those guidelines for the remainder of the session.
+## Skill categories
 
-## Core skill sets
+### Featured collections
 
-### Caveman
-Designed for speed and cost-saving. It reduces output tokens by approximately 75% by using a telegraphic communication style. You can activate it by asking the agent to use "caveman mode."
+These are the most advanced methodologies included in the repository:
 
-### Humanizer
-Analyzes text for common LLM artifacts like em-dash overuse, rule-of-three patterns, and inflated significance. It rewrites text to sound more like a natural human voice.
+- **Caveman**: Dramatically reduces output costs by enforcing a terse, telegraphic communication style.
+- **Superpowers**: Provides an autonomous development workflow (Brainstorming → Planning → TDD).
+- **Humanizer**: Audits text for "AI-isms" and rewrites it to sound natural and human-written.
 
-### Superpowers
-A comprehensive development workflow. It forces the agent to follow a specific sequence: brainstorming requirements, creating an implementation plan, and then executing using Test-Driven Development.
+### Professional Agency Library
+
+The repository contains over 400 `agency-*` skills. These are highly specific professional personas that allow an agent to act as an expert in:
+
+- **Engineering**: Backend architects, database optimizers, and security engineers.
+- **Marketing**: SEO specialists, growth hackers, and content strategists.
+- **Business**: CFO advisors, legal compliance checkers, and project managers.
+- **Creative**: UI designers, game designers, and narrative architects.
 
 ## Adding new skills
 
