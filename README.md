@@ -1,81 +1,63 @@
-# 🚀 My Skills Repository
+# My Skills
 
-A comprehensive collection of **400+ AI Agent Skills** designed to give your AI assistants specialized superpowers. This repository includes the full suite of **Caveman**, **Superpowers**, and **Humanizer** skills, along with hundreds of agency-level professional roles.
+This repository is a collection of 400+ specialized skills for AI agents. It includes the complete sets from Caveman, Superpowers, and Humanizer, along with hundreds of professional role definitions for various industries.
 
----
+## Repository structure
 
-## 📂 Repository Structure
+All xirfado are located in the `skills` directory, grouped by their origin or category.
 
-- `skills/`: The core directory containing all skill bundles.
-  - `caveman/`: Skills for token efficiency and terse communication.
-  - `superpowers/`: Advanced software development methodology (TDD, Brainstorming, etc.).
-  - `humanizer/`: Tools to make AI text sound human and natural.
-  - `agency-*/`: Specialized professional roles (SEO, Backend Architect, etc.).
+- `skills/caveman/`: Focuses on extreme token efficiency and brief, technical responses.
+- `skills/superpowers/`: Covers a structured software development methodology, including TDD and brainstorming.
+- `skills/humanizer/`: Contains the logic for removing AI patterns and artifacts from text.
+- `skills/agency-*/`: Hundreds of specific roles ranging from backend architecture to SEO strategy.
 
----
+## Setup
 
-## 💻 Installation (Desktop/Laptop)
+These skills are designed for agents that support directory-based skill loading, such as Antigravity, Claude Code, Cursor, and Gemini CLI.
 
-These skills work with modern AI agents like **Antigravity**, **Claude Code**, **Cursor**, and **Gemini CLI**.
+### Windows
 
-### 🪟 Windows
-Copy the desired folders to your local agents directory:
+To use a skill locally, move its folder to your agent's configuration path.
+
 ```powershell
-# Create the directory if it doesn't exist
+# Create the target directory
 New-Item -ItemType Directory -Path "$HOME\.agents\skills" -Force
 
-# Copy a skill (example: caveman)
+# Copy a specific skill set
 Copy-Item -Path ".\skills\caveman" -Destination "$HOME\.agents\skills\" -Recurse
 ```
 
-### 🍎 macOS & 🐧 Linux
-Use the following commands in your terminal:
+### macOS and Linux
+
 ```bash
-# Create the directory
+# Create the target directory
 mkdir -p ~/.agents/skills
 
-# Copy a skill (example: humanizer)
+# Copy a specific skill set
 cp -r ./skills/humanizer ~/.agents/skills/
 ```
 
----
+## Using skills in web interfaces
 
-## 🌐 Using with Web Interfaces (Claude.ai / ChatGPT)
+If you are using Claude.ai or ChatGPT, you can still apply these skills to your conversations.
 
-Even if you don't use a local terminal agent, you can still use these skills in your browser!
+1.  Open the `SKILL.md` file for the specific skill you want to use.
+2.  Copy the entire content of the file.
+3.  Paste it into the **Project Instructions** (on Claude) or **Custom Instructions** (on ChatGPT).
 
-### 1. Claude.ai Projects / Custom Instructions
-1. Open the `SKILL.md` file of the skill you want to use.
-2. Copy the entire text.
-3. Paste it into:
-   - **Claude.ai**: "Project Instructions" (for specific projects).
-   - **ChatGPT**: "Custom Instructions" (for all chats).
-   - **System Prompt**: Simply paste it at the start of a new chat and say: *"Follow these instructions for this session."*
+You can also upload the `SKILL.md` file directly to a chat and instruct the AI to follow those guidelines for the remainder of the session.
 
-### 2. Manual Triggering
-You can also just upload the `SKILL.md` file to a chat and ask the AI to "Internalize this skill and use it for the rest of our conversation."
+## Core skill sets
 
----
+### Caveman
+Designed for speed and cost-saving. It reduces output tokens by approximately 75% by using a telegraphic communication style. You can activate it by asking the agent to use "caveman mode."
 
-## 🛠️ Included Power-Skills
+### Humanizer
+Analyzes text for common LLM artifacts like em-dash overuse, rule-of-three patterns, and inflated significance. It rewrites text to sound more like a natural human voice.
 
-### 🪨 Caveman
-- **Goal:** Talk less, save tokens (~75% reduction).
-- **Trigger:** "Talk like caveman" or "Caveman mode".
+### Superpowers
+A comprehensive development workflow. It forces the agent to follow a specific sequence: brainstorming requirements, creating an implementation plan, and then executing using Test-Driven Development.
 
-### ✍️ Humanizer
-- **Goal:** Remove "AI-isms" and make text sound natural.
-- **Trigger:** "Humanize this text" or "Rewrite this in a human voice".
+## Adding new skills
 
-### 🦸 Superpowers
-- **Goal:** Systematic software development.
-- **Workflow:** `brainstorming` → `writing-plans` → `test-driven-development`.
-
----
-
-## 🤝 Contributing
-Feel free to add your own skills to the `skills/` folder! Make sure each skill is in its own directory with a `SKILL.md` file.
-
----
-
-*Maintained by [Sirrryasir](https://github.com/sirrryasir)*
+To add to this collection, create a new subdirectory within `skills/` and include a `SKILL.md` file that follows the standard Antigravity frontmatter format.
