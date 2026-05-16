@@ -1,39 +1,26 @@
-# Antigravity Integration
+# 🚀 Agents Skills Ecosystem
 
-![antigravity](https://img.shields.io/badge/Integration-antigravity-0A66C2)
+Welcome to the centralized skills directory for Gemini CLI, Antigravity, Cursor, and Codex. 
 
-This directory contains converted Claude Skills for **Antigravity**.
+## 🗺️ Reorganized Structure
 
-## Included Skills
+The skills have been categorized and cleaned up to prevent context overload and improve agent performance. Over 250 redundant and low-value skills have been removed.
 
-- **240** skills generated from this repository.
+**View the full map here: [SKILLS_MAP.md](./SKILLS_MAP.md)**
 
-## Format
+## 📂 Categories
 
-Directory skill bundles: `SKILL.md` with Antigravity frontmatter (`risk`, `source`, `date_added`) plus copied `scripts/`, `references/`, `templates/` when present.
+1. **[01_core](./01_core/)**: Orchestration, Protocols, and System tools.
+2. **[02_development](./02_development/)**: Full-stack, Architecture, Testing, and Claude API.
+3. **[03_ai_ml](./03_ai_ml/)**: Machine Learning, Data Science, and RAG.
+4. **[04_business_ops](./04_business_ops/)**: PM, SaaS, C-suite, and Agile.
+5. **[05_marketing_design](./05_marketing_design/)**: Growth, SEO, Content, and High-end Design.
+6. **[06_devops_infra](./06_devops_infra/)**: Cloud, Security, Docker, and CI/CD.
+7. **[07_specialized_tools](./07_specialized_tools/)**: PDF/Office tools, Screenshots, and Utilities.
 
-## Install
+## 🛠️ Usage for Agents
 
-### Manual
+When looking for a skill, always check the relevant category folder. The `SKILLS_MAP.md` provides a high-level overview of what's available.
 
-Copy each folder from `integrations/antigravity/<skill-name>/` to `~/.gemini/antigravity/skills/<skill-name>/`.
-
-### Script
-
-```bash
-git clone https://github.com/alirezarezvani/claude-skills.git
-cd claude-skills
-./scripts/install.sh --tool antigravity
-```
-
-## Verify
-
-Run `find ~/.gemini/antigravity/skills -name "SKILL.md" | wc -l` and confirm the count, then check your Gemini/Antigravity skill list.
-
-## Update
-
-Re-run `./scripts/convert.sh --tool antigravity` and then reinstall with `./scripts/install.sh --tool antigravity`.
-
-## Source Repository
-
-- https://github.com/alirezarezvani/claude-skills
+---
+## 📦 Installation & Updates (Legacy)
