@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video-as-Code Producer"
+  short_description: "Build next-generation developer-education videos and browser animations in Remotion using Video-as-Code principles."
+  default_prompt: "Help me generate a professional technical developer education video using the video-as-code skill."
