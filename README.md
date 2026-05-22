@@ -1,69 +1,35 @@
-# My Skills
+# 🥷 The Ninja Agent Skills Ecosystem
 
-This repository is a comprehensive library of over 400 specialized AI agent skills. While it features advanced toolsets like Caveman, Superpowers, and Humanizer, the bulk of the collection consists of hundreds of professional agency roles designed for high-level technical and business tasks.
+Welcome to the ultimate high-signal skills repository. This system is designed for elite Software Architects and AI Engineers who demand 100% precision and zero bloat.
 
-## Repository structure
+## 🏹 Philosophy: The Ninja Way
+Most agent ecosystems suffer from "Skill Saturation"—hundreds of mediocre experts that dilute context and confuse the AI. This repository follows a different path:
+1. **Ruthless Curation**: Only the 23 most powerful, high-signal experts are allowed.
+2. **Single Source of Truth**: This directory is the master Git repository used directly by all agents (Gemini CLI, Cursor, Codex).
+3. **Zero Bloat**: No generic marketing, no admin bureaucracy, and no redundant tools. If an LLM already knows it (like basic CSS), it's not a skill.
 
-All skills are located in the `skills` directory, organized by category and origin.
+## 📂 Structure
+The skills are organized into 7 logical engineering domains:
+- `01_core`: Orchestration and Safety.
+- `02_development`: Architecture and Implementation.
+- `03_ai_ml`: Advanced Intelligence.
+- `04_business_ops`: Strategic Leadership.
+- `05_marketing_design`: Visual Production.
+- `06_devops_infra`: Automation and Security.
+- `07_specialized_tools`: High-end Production Engines.
 
-- `skills/caveman/`: A set of 7 skills focused on extreme token efficiency.
-- `skills/superpowers/`: A collection of 14 skills implementing a structured software development methodology.
-- `skills/humanizer/`: Specialized logic for removing AI writing artifacts.
-- `skills/agency-*/`: Over 400 distinct professional roles, including backend architects, SEO specialists, security auditors, and more.
+**View the full list of experts in [SKILLS_MAP.md](./SKILLS_MAP.md)**
 
-## Setup
+## 🛠️ Usage
+All agents are instructed via `~/.gemini/GEMINI.md` to consult the `SKILLS_MAP.md` before starting any task. This ensures they always adopt the correct expert persona and utilize the most efficient tools.
 
-These skills are designed for agents that support directory-based skill loading, such as Antigravity, Claude Code, Cursor, and Gemini CLI.
-
-### Windows
-
-To use a skill locally, move its folder to your agent's configuration path.
-
-```powershell
-# Create the target directory
-New-Item -ItemType Directory -Path "$HOME\.agents\skills" -Force
-
-# Copy a specific skill set (e.g., the entire superpowers collection)
-Copy-Item -Path ".\skills\superpowers" -Destination "$HOME\.agents\skills\" -Recurse
-```
-
-### macOS and Linux
-
+### For Developers
+To update the ecosystem or add a new elite skill:
 ```bash
-# Create the target directory
-mkdir -p ~/.agents/skills
-
-# Copy a specific skill set
-cp -r ./skills/humanizer ~/.agents/skills/
+cd ~/.agents/skills
+git commit -am "feat: added new high-signal expert"
+git push origin master
 ```
 
-## Using skills in web interfaces
-
-For browser-based tools like Claude.ai or ChatGPT, you can apply these skills manually.
-
-1.  Navigate to the directory of the skill you want to use.
-2.  Open the `SKILL.md` file.
-3.  Copy its content and paste it into your **Project Instructions** or **Custom Instructions**.
-
-## Skill categories
-
-### Featured collections
-
-These are the most advanced methodologies included in the repository:
-
-- **Caveman**: Dramatically reduces output costs by enforcing a terse, telegraphic communication style.
-- **Superpowers**: Provides an autonomous development workflow (Brainstorming → Planning → TDD).
-- **Humanizer**: Audits text for "AI-isms" and rewrites it to sound natural and human-written.
-
-### Professional Agency Library
-
-The repository contains over 400 `agency-*` skills. These are highly specific professional personas that allow an agent to act as an expert in:
-
-- **Engineering**: Backend architects, database optimizers, and security engineers.
-- **Marketing**: SEO specialists, growth hackers, and content strategists.
-- **Business**: CFO advisors, legal compliance checkers, and project managers.
-- **Creative**: UI designers, game designers, and narrative architects.
-
-## Adding new skills
-
-To add to this collection, create a new subdirectory within `skills/` and include a `SKILL.md` file that follows the standard Antigravity frontmatter format.
+---
+*Optimized for Peak Performance. Built by Architects, for Architects.*
