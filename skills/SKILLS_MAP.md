@@ -21,7 +21,7 @@ Full-stack engineering, architecture, and testing.
 - `claude-api`: Anthropic SDK integration and optimization.
 - `web-artifacts-builder`: Building React/Tailwind/shadcn artifacts.
 - `mcp-builder`: Model Context Protocol server development.
-- `building-data-apps`: Frontend UIs for GCP data sources.
+- `building-data-apps`: Frontend UIs for data sources.
 - `managing-python-dependencies`: Virtualenv and dependency management.
 - `tailwind`: Tailwind CSS v4.2 browser-runtime patterns.
 - `senior-fullstack`, `senior-backend`, `senior-frontend`, `senior-architect`.
@@ -31,17 +31,12 @@ Full-stack engineering, architecture, and testing.
 Data science, machine learning, and AI engineering.
 - `senior-ml-engineer`, `senior-prompt-engineer`.
 - `rag-architect`, `ai-security`, `ai-seo`.
-- `gcp-data-pipelines`, `gcp-dataflow`, `gcp-spark`: GCP data engineering.
-- `dbt-bigquery`, `dataform-bigquery`: SQL transformation in BigQuery.
 - `ml-best-practices`, `notebook-guidance`: Data science workflows.
-- `developing-with-bigquery`, `discovering-gcp-data-assets`.
 - `llm-cost-optimizer`, `llm-wiki`.
 
 ### 💼 04_business_ops
-Product management, SaaS operations, and C-suite advisory.
-- `senior-pm`, `product-manager-toolkit`, `product-discovery`, `product-analytics`.
-- `saas-scaffolder`, `saas-metrics-coach`, `revenue-operations`.
-- `ceo-advisor`, `cto-advisor`, `cfo-advisor`.
+Product management and strategic planning.
+- `senior-pm`, `product-manager-toolkit`, `product-discovery`, `product-analytics`, `product-strategist`.
 
 ### 📣 05_marketing_design
 Growth, marketing, and high-end web design.
@@ -49,19 +44,18 @@ Growth, marketing, and high-end web design.
 - `animejs`, `gsap`, `css-animations`: High-end web animations.
 - `website-to-hyperframes`: Website to video capture.
 - `epic-design`, `landing-page-generator`, `canvas-design`.
-- `x-twitter-growth`, `brand-guidelines`.
+- `x-twitter-growth`, `brand-guidelines`, `copywriting`.
 
 ### 🛡️ 06_devops_infra
 Infrastructure, security, and cloud management.
 - `senior-devops`, `senior-security`, `senior-secops`.
 - `terraform-patterns`, `docker-development`.
-- `gcp-pipeline-orchestration`, `gcp-pipeline-resource-provisioning`.
-- `gcloud-auth-verification`, `gcp-composer-troubleshooting`.
-- `aws-solution-architect`, `gcp-cloud-architect`.
+- `aws-solution-architect`, `azure-cloud-architect`.
+- `ci-cd-pipeline-builder`, `threat-detection`.
 
 ### 🧰 07_specialized_tools
 Document processing and utility tools.
 - `hyperframes`, `hyperframes-cli`, `hyperframes-media`, `hyperframes-registry`: Video production.
 - `remotion-to-hyperframes`, `three`, `typegpu`, `waapi`, `lottie`.
-- `pdf`, `docx`, `xlsx`, `pptx`: Office document handlers.
+- `pdf`, `docx`, `xlsx`, `pptx`: Document parsing and manipulation.
 - `full-page-screenshot`, `excalidraw-diagram`.
