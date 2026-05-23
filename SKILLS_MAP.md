@@ -22,6 +22,7 @@ Core engineering and system architecture.
 ### 🧠 03_ai_ml
 Advanced AI and data engineering.
 - `senior-prompt-engineer`: Advanced LLM prompting, agentic design, and evaluation.
+- `adversarial-prompting`: Bypasses RLHF sycophancy, forces absolute candor, and configures technical sparring modes.
 - `rag-architect`: Retrieval-Augmented Generation (RAG) system design.
 - `ml-best-practices`: Clean and efficient machine learning workflows.
 
